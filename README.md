@@ -25,3 +25,7 @@ example configuration:
   }
 }
 ```
+
+# usage
+
+`node main.js [host ip]`
