@@ -4,7 +4,7 @@ minimal minecraft java edition client with the purpose of logging in and loading
 # installation
 clone the repo
 
-run `npm install mineflayer colors`
+run `npm install`
 
 # configuration
 
@@ -29,3 +29,14 @@ example configuration:
 # usage
 
 `node main.js [host ip]`
+
+# console
+
+quartz has a console you can use for minimal interactions, like chat and checking your status.
+
+commands so far:
+```
+quit - close connection to server and exit quartz
+chat - open prompt for talking to public chat and running commands
+status - display status of yourself and the world around you
+```

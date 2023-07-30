@@ -1,0 +1,29 @@
+{
+  "name": "quartz",
+  "version": "1.0.0",
+  "description": "a minimal minecraft CLI client with simple automation configuration",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheMemeSniper/quartz.git"
+  },
+  "keywords": [
+    "quartz",
+    "mineflayer",
+    "minecraft"
+  ],
+  "author": "Kaitlin",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/TheMemeSniper/quartz/issues"
+  },
+  "homepage": "https://github.com/TheMemeSniper/quartz#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "mineflayer": "^4.10.1",
+    "play-sound": "^1.1.5"
+  }
+}
