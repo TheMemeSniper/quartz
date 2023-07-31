@@ -44,4 +44,7 @@ commands so far:
 quit - close connection to server and exit quartz
 chat - open prompt for talking to public chat and running commands
 status - display status of yourself and the world around you
+pos - print current position in world
+goto - go to a set of coordinates, experimental
+eval - evaulate javascript code, for debugging and more
 ```
