@@ -22,9 +22,23 @@ bot.on("entityHurt", (entity) => {
 })
 
 
-bot.on("spawn", () => {
-  logger.info("Player spawned");
-})
+if (process.argv.includes("--viewer")){
+  bot.on("spawn", () => {
+    const mineflayerViewer = require('prismarine-viewer').mineflayer
+    mineflayerViewer(bot, { port: 3000 })
+    const path = [bot.entity.position.clone()]
+    bot.on('move', () => {
+      if (path[path.length - 1].distanceTo(bot.entity.position) > 1) {
+        path.push(bot.entity.position.clone())
+        bot.viewer.drawLine('path', path)
+      }
+    })
+  })
+} else {
+  bot.on("spawn", () => {
+    logger.info("Player spawned");
+  })
+}
 
 bot.on("death", () => {
   logger.panic("Player has died")

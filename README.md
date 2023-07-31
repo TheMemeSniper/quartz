@@ -28,7 +28,12 @@ example configuration:
 
 # usage
 
-`node main.js [host ip]`
+`node main.js <host ip> [--viewer]`
+
+`--viewer` starts the prismarine web viewer at port 3000 on localhost. as of writing this, prismarine-viewer does not support 1.19+.
+see the following issues:
+https://github.com/PrismarineJS/prismarine-viewer/issues/321
+https://github.com/PrismarineJS/prismarine-viewer/issues/399
 
 # console
 

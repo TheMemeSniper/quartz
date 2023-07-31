@@ -24,6 +24,8 @@
   "dependencies": {
     "colors": "^1.4.0",
     "mineflayer": "^4.10.1",
-    "play-sound": "^1.1.5"
+    "mineflayer-pathfinder": "^2.4.4",
+    "play-sound": "^1.1.5",
+    "prismarine-viewer": "^1.25.0"
   }
 }
