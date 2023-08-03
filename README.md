@@ -23,6 +23,9 @@ example configuration:
       "500, 188, -328": {}
     }
   }
+  "quartz": {
+    "soundscheme": "chip"
+  }
 }
 ```
 

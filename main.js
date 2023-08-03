@@ -48,14 +48,9 @@ bot.on("health", () => {
   logger.warn(`Health/Food updated: HP: ${bot.health} | FP: ${bot.food}`)
 })
 
-bot.on('message', (message, username) => {
-  if (username === bot.username) {
-    logger.chatout(message, username)
-  } else if (username in bot.players) {
-    logger.chatin(message, username)
-  } else {
-    logger.message(message.toAnsi())
-  }
+bot.on('message', (message, position) => {
+  if (position === "chat") return
+  logger.message(message)
 })
 
 
@@ -67,5 +62,13 @@ bot.on('login', () => {
 bot.on("kicked", (reason) => {
   logger.panic(`Bot kicked from server: ${reason}`)
   process.exit(3)
+})
+
+bot.on("chat", (username, message) => {
+  if (username === bot.username) {
+    logger.chatout(message, username)
+  } else {
+    logger.chatin(message, username)
+  }
 })
 
