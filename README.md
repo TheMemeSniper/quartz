@@ -1,3 +1,5 @@
+# This is broken shit! The mineflayer library this software uses can't catch up fast enough to still work with new versions!
+
 # quartz
 minimal minecraft java edition client with the purpose of logging in and loading chunks
 
